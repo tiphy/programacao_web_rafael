@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Tela de login</title>
 </head>
-<body style="font-family: Arial, Helvetica, sans-serif; text-align: center; margin-top: 100px;">
-    <h2>Login do Sistema</h2>
-    <form action="cadastro.html" method="get">
-        <label for="txtUsuario">Usuário</label>
-        <input type="text" id="txtUsuario" required> <br><br>
 
-        <label for="txtSenha">Senha:</label>
-        <input type="password" id="txtSenha" required> <br><br>
+<body>
+    <header>
+        <div class="container">
+            <div class="marca">Login</div>
+            <nav>
+                <a href="index.html">Voltar para home</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <form>
+            <fieldset>
+                <legend>Acesso</legend>
 
-        <button type="submit"> Entrar</button>
-    </form>
+                <label for="txtUsuario">Usuario</label>
+                <input type="text" id="txtUsuario" placeholder="Digite o seu nome" required minlength="3">
+
+                <label for="txtSenha">Senha</label>
+                <input type="password" id="txtSenha" placeholder="Digite a sua senha" required minlength="4"
+                    maxlength="8">
+
+                <label style="margin-top: 10px;">
+                    <input type="checkbox" id="chkLembrar">
+                    Manter conectado
+                </label>
+
+                <div class="acaoBotao">
+                    <button type="submit">Entrar</button>
+                    <a class="link" href="index.html">Cancelar</a>
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <small>&copy; 2025 Senac SP</small>
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
