@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #d9d9db;
+    color: #272525;
+}
+.container{
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+header{
+    background: #29282b;
+    color: #ffffff;
+}
+header .topo{
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+header h1{
+    font-size: 18px;
+    margin: 0;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: rgba(48, 42, 54, 0.15);
+    color: #f0f0f0;
+    text-decoration: none;
+}
+nav a:hover{
+    background: rgba(135, 131, 148, 0.25);
+}
+section{
+    padding: 20px 0;   
+}
+.caixa{
+    background: rgba(190, 181, 192, 0.133);
+    border: 1px solid;
+    border-color: #6b5b96;
+    border-radius: 8px;
+    padding: 5px;
+}
+.grid-2{
+    display: grid;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border-radius: 1px solid;
+    padding: 10px;
+    text-align: left;
+}
+
+th{
+    background: #c4bec7;
+    font-weight: 600;
+    border-radius: 2px;
+}
+.form{
+    display: grid;
+}
+.form-grid-2{
+    display: grid;
+}
+label{
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #383b3f;
+}
+button, .btn{
+    display: inline-block;
+    padding: 10px 14px;
+    border: 0;
+    background: #4f57a1;
+    color: #d6d6d6;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer{
+    color: #555;
+    padding: 24px 0;
+}
